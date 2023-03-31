@@ -103,7 +103,6 @@ So the standard workflow is:
 ```bash
 > python3 parameter_generator.py
 > python3 postprocessing.py
-> python3 statistic.py
 ```
 
 The analysis scripts can also be called directly on a results directory by using the `res_dir_path` flag.
