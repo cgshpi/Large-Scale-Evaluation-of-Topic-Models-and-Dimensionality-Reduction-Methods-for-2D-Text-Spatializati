@@ -126,5 +126,5 @@ Additionally, mounts and workdir need to be set accordingly.
 
 ```bash
 > ./batch.sh
-> ./batch_som.sh
+> ./batch_big.sh
 ```
