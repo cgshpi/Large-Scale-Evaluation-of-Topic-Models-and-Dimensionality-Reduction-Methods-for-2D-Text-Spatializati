@@ -1,0 +1,261 @@
+,Dataset,Layout,value
+0,20 Newsgroup,"(VSM,+,MDS,X)",0.33
+1,20 Newsgroup,"(LSI,-,MDS,-)",0.37
+2,20 Newsgroup,"(BERT,X,MDS,X)",0.38
+3,20 Newsgroup,"(LSI,+,MDS,-)",0.38
+4,20 Newsgroup,"(NMF,+,MDS,-)",0.37
+5,20 Newsgroup,"(VSM,-,MDS,X)",0.36
+6,20 Newsgroup,"(NMF,-,MDS,-)",0.37
+7,20 Newsgroup,"(LDA,X,MDS,-)",0.38
+8,20 Newsgroup,"(NMF,-,MDS,+)",0.38
+9,20 Newsgroup,"(LDA,X,MDS,+)",0.36
+10,20 Newsgroup,"(NMF,+,MDS,+)",0.38
+11,20 Newsgroup,"(LSI,-,MDS,+)",0.37
+12,20 Newsgroup,"(LSI,+,MDS,+)",0.38
+13,20 Newsgroup,"(VSM,+,SOM,X)",0.49
+14,20 Newsgroup,"(LSI,-,SOM,-)",0.52
+15,20 Newsgroup,"(BERT,X,SOM,X)",0.5
+16,20 Newsgroup,"(LSI,+,SOM,-)",0.61
+17,20 Newsgroup,"(NMF,+,SOM,-)",0.53
+18,20 Newsgroup,"(VSM,-,SOM,X)",0.41
+19,20 Newsgroup,"(NMF,-,SOM,-)",0.44
+20,20 Newsgroup,"(LDA,X,SOM,-)",0.5
+21,20 Newsgroup,"(NMF,-,SOM,+)",0.45
+22,20 Newsgroup,"(LDA,X,SOM,+)",0.52
+23,20 Newsgroup,"(NMF,+,SOM,+)",0.55
+24,20 Newsgroup,"(LSI,-,SOM,+)",0.5
+25,20 Newsgroup,"(LSI,+,SOM,+)",0.63
+26,20 Newsgroup,"(VSM,+,UMAP,X)",0.46
+27,20 Newsgroup,"(LSI,-,UMAP,-)",0.61
+28,20 Newsgroup,"(BERT,X,UMAP,X)",0.61
+29,20 Newsgroup,"(LSI,+,UMAP,-)",0.72
+30,20 Newsgroup,"(NMF,+,UMAP,-)",0.58
+31,20 Newsgroup,"(VSM,-,UMAP,X)",0.48
+32,20 Newsgroup,"(NMF,-,UMAP,-)",0.45
+33,20 Newsgroup,"(LDA,X,UMAP,-)",0.56
+34,20 Newsgroup,"(NMF,-,UMAP,+)",0.47
+35,20 Newsgroup,"(LDA,X,UMAP,+)",0.57
+36,20 Newsgroup,"(NMF,+,UMAP,+)",0.62
+37,20 Newsgroup,"(LSI,-,UMAP,+)",0.6
+38,20 Newsgroup,"(LSI,+,UMAP,+)",0.72
+39,20 Newsgroup,"(VSM,+,TSNE,X)",0.8
+40,20 Newsgroup,"(LSI,-,TSNE,-)",0.72
+41,20 Newsgroup,"(BERT,X,TSNE,X)",0.62
+42,20 Newsgroup,"(LSI,+,TSNE,-)",0.8
+43,20 Newsgroup,"(NMF,+,TSNE,-)",0.71
+44,20 Newsgroup,"(VSM,-,TSNE,X)",0.67
+45,20 Newsgroup,"(NMF,-,TSNE,-)",0.5
+46,20 Newsgroup,"(LDA,X,TSNE,-)",0.64
+47,20 Newsgroup,"(NMF,-,TSNE,+)",0.47
+48,20 Newsgroup,"(LDA,X,TSNE,+)",0.64
+49,20 Newsgroup,"(NMF,+,TSNE,+)",0.67
+50,20 Newsgroup,"(LSI,-,TSNE,+)",0.72
+51,20 Newsgroup,"(LSI,+,TSNE,+)",0.8
+52,Emails,"(VSM,+,MDS,X)",0.43
+53,Emails,"(LSI,-,MDS,-)",0.43
+54,Emails,"(BERT,X,MDS,X)",0.38
+55,Emails,"(LSI,+,MDS,-)",0.39
+56,Emails,"(NMF,+,MDS,-)",0.41
+57,Emails,"(VSM,-,MDS,X)",0.43
+58,Emails,"(NMF,-,MDS,-)",0.4
+59,Emails,"(LDA,X,MDS,-)",0.42
+60,Emails,"(NMF,-,MDS,+)",0.42
+61,Emails,"(LDA,X,MDS,+)",0.4
+62,Emails,"(NMF,+,MDS,+)",0.4
+63,Emails,"(LSI,-,MDS,+)",0.43
+64,Emails,"(LSI,+,MDS,+)",0.39
+65,Emails,"(VSM,+,SOM,X)",0.51
+66,Emails,"(LSI,-,SOM,-)",0.5
+67,Emails,"(BERT,X,SOM,X)",0.54
+68,Emails,"(LSI,+,SOM,-)",0.58
+69,Emails,"(NMF,+,SOM,-)",0.5
+70,Emails,"(VSM,-,SOM,X)",0.48
+71,Emails,"(NMF,-,SOM,-)",0.49
+72,Emails,"(LDA,X,SOM,-)",0.5
+73,Emails,"(NMF,-,SOM,+)",0.49
+74,Emails,"(LDA,X,SOM,+)",0.51
+75,Emails,"(NMF,+,SOM,+)",0.52
+76,Emails,"(LSI,-,SOM,+)",0.5
+77,Emails,"(LSI,+,SOM,+)",0.58
+78,Emails,"(VSM,+,UMAP,X)",0.56
+79,Emails,"(LSI,-,UMAP,-)",0.48
+80,Emails,"(BERT,X,UMAP,X)",0.57
+81,Emails,"(LSI,+,UMAP,-)",0.57
+82,Emails,"(NMF,+,UMAP,-)",0.5
+83,Emails,"(VSM,-,UMAP,X)",0.61
+84,Emails,"(NMF,-,UMAP,-)",0.5
+85,Emails,"(LDA,X,UMAP,-)",0.51
+86,Emails,"(NMF,-,UMAP,+)",0.49
+87,Emails,"(LDA,X,UMAP,+)",0.51
+88,Emails,"(NMF,+,UMAP,+)",0.51
+89,Emails,"(LSI,-,UMAP,+)",0.48
+90,Emails,"(LSI,+,UMAP,+)",0.57
+91,Emails,"(VSM,+,TSNE,X)",0.88
+92,Emails,"(LSI,-,TSNE,-)",0.52
+93,Emails,"(BERT,X,TSNE,X)",0.6
+94,Emails,"(LSI,+,TSNE,-)",0.63
+95,Emails,"(NMF,+,TSNE,-)",0.55
+96,Emails,"(VSM,-,TSNE,X)",0.78
+97,Emails,"(NMF,-,TSNE,-)",0.5
+98,Emails,"(LDA,X,TSNE,-)",0.52
+99,Emails,"(NMF,-,TSNE,+)",0.5
+100,Emails,"(LDA,X,TSNE,+)",0.51
+101,Emails,"(NMF,+,TSNE,+)",0.54
+102,Emails,"(LSI,-,TSNE,+)",0.52
+103,Emails,"(LSI,+,TSNE,+)",0.63
+104,GitHub,"(VSM,+,MDS,X)",0.41
+105,GitHub,"(LSI,-,MDS,-)",0.42
+106,GitHub,"(LSI,+,MDS,-)",0.42
+107,GitHub,"(NMF,+,MDS,-)",0.42
+108,GitHub,"(VSM,-,MDS,X)",0.42
+109,GitHub,"(NMF,-,MDS,-)",0.43
+110,GitHub,"(LDA,X,MDS,-)",0.42
+111,GitHub,"(NMF,-,MDS,+)",0.42
+112,GitHub,"(LDA,X,MDS,+)",0.42
+113,GitHub,"(NMF,+,MDS,+)",0.42
+114,GitHub,"(LSI,-,MDS,+)",0.42
+115,GitHub,"(LSI,+,MDS,+)",0.42
+116,GitHub,"(VSM,+,SOM,X)",0.49
+117,GitHub,"(LSI,-,SOM,-)",0.46
+118,GitHub,"(LSI,+,SOM,-)",0.51
+119,GitHub,"(NMF,+,SOM,-)",0.48
+120,GitHub,"(VSM,-,SOM,X)",0.46
+121,GitHub,"(NMF,-,SOM,-)",0.43
+122,GitHub,"(LDA,X,SOM,-)",0.49
+123,GitHub,"(NMF,-,SOM,+)",0.44
+124,GitHub,"(LSI,-,SOM,+)",0.46
+125,GitHub,"(LSI,+,SOM,+)",0.51
+126,GitHub,"(VSM,+,UMAP,X)",0.45
+127,GitHub,"(LSI,-,UMAP,-)",0.45
+128,GitHub,"(LSI,+,UMAP,-)",0.54
+129,GitHub,"(NMF,+,UMAP,-)",0.48
+130,GitHub,"(VSM,-,UMAP,X)",0.47
+131,GitHub,"(NMF,-,UMAP,-)",0.43
+132,GitHub,"(LDA,X,UMAP,-)",0.49
+133,GitHub,"(NMF,-,UMAP,+)",0.44
+134,GitHub,"(LDA,X,UMAP,+)",0.51
+135,GitHub,"(NMF,+,UMAP,+)",0.48
+136,GitHub,"(LSI,-,UMAP,+)",0.45
+137,GitHub,"(LSI,+,UMAP,+)",0.53
+138,GitHub,"(VSM,+,TSNE,X)",0.58
+139,GitHub,"(LSI,-,TSNE,-)",0.51
+140,GitHub,"(LSI,+,TSNE,-)",0.55
+141,GitHub,"(NMF,+,TSNE,-)",0.5
+142,GitHub,"(VSM,-,TSNE,X)",0.77
+143,GitHub,"(NMF,-,TSNE,-)",0.44
+144,GitHub,"(LDA,X,TSNE,-)",0.52
+145,GitHub,"(NMF,-,TSNE,+)",0.44
+146,GitHub,"(LDA,X,TSNE,+)",0.52
+147,GitHub,"(NMF,+,TSNE,+)",0.5
+148,GitHub,"(LSI,-,TSNE,+)",0.51
+149,GitHub,"(LSI,+,TSNE,+)",0.55
+150,Reuters,"(VSM,+,MDS,X)",0.55
+151,Reuters,"(LSI,-,MDS,-)",0.55
+152,Reuters,"(BERT,X,MDS,X)",0.56
+153,Reuters,"(LSI,+,MDS,-)",0.55
+154,Reuters,"(NMF,+,MDS,-)",0.53
+155,Reuters,"(VSM,-,MDS,X)",0.55
+156,Reuters,"(NMF,-,MDS,-)",0.56
+157,Reuters,"(LDA,X,MDS,-)",0.58
+158,Reuters,"(NMF,-,MDS,+)",0.57
+159,Reuters,"(LDA,X,MDS,+)",0.55
+160,Reuters,"(NMF,+,MDS,+)",0.54
+161,Reuters,"(LSI,-,MDS,+)",0.54
+162,Reuters,"(LSI,+,MDS,+)",0.55
+163,Reuters,"(VSM,+,SOM,X)",0.56
+164,Reuters,"(LSI,-,SOM,-)",0.55
+165,Reuters,"(BERT,X,SOM,X)",0.56
+166,Reuters,"(LSI,+,SOM,-)",0.55
+167,Reuters,"(NMF,+,SOM,-)",0.55
+168,Reuters,"(VSM,-,SOM,X)",0.58
+169,Reuters,"(NMF,-,SOM,-)",0.56
+170,Reuters,"(LDA,X,SOM,-)",0.56
+171,Reuters,"(NMF,-,SOM,+)",0.55
+172,Reuters,"(LDA,X,SOM,+)",0.56
+173,Reuters,"(NMF,+,SOM,+)",0.55
+174,Reuters,"(LSI,-,SOM,+)",0.55
+175,Reuters,"(LSI,+,SOM,+)",0.55
+176,Reuters,"(VSM,+,UMAP,X)",0.61
+177,Reuters,"(LSI,-,UMAP,-)",0.55
+178,Reuters,"(BERT,X,UMAP,X)",0.55
+179,Reuters,"(LSI,+,UMAP,-)",0.55
+180,Reuters,"(NMF,+,UMAP,-)",0.57
+181,Reuters,"(VSM,-,UMAP,X)",0.58
+182,Reuters,"(NMF,-,UMAP,-)",0.56
+183,Reuters,"(LDA,X,UMAP,-)",0.57
+184,Reuters,"(NMF,-,UMAP,+)",0.58
+185,Reuters,"(LDA,X,UMAP,+)",0.58
+186,Reuters,"(NMF,+,UMAP,+)",0.54
+187,Reuters,"(LSI,-,UMAP,+)",0.57
+188,Reuters,"(LSI,+,UMAP,+)",0.56
+189,Reuters,"(VSM,+,TSNE,X)",0.68
+190,Reuters,"(LSI,-,TSNE,-)",0.57
+191,Reuters,"(BERT,X,TSNE,X)",0.59
+192,Reuters,"(LSI,+,TSNE,-)",0.57
+193,Reuters,"(NMF,+,TSNE,-)",0.56
+194,Reuters,"(VSM,-,TSNE,X)",0.65
+195,Reuters,"(NMF,-,TSNE,-)",0.56
+196,Reuters,"(LDA,X,TSNE,-)",0.56
+197,Reuters,"(NMF,-,TSNE,+)",0.55
+198,Reuters,"(LDA,X,TSNE,+)",0.58
+199,Reuters,"(NMF,+,TSNE,+)",0.56
+200,Reuters,"(LSI,-,TSNE,+)",0.59
+201,Reuters,"(LSI,+,TSNE,+)",0.56
+202,Seven Categories,"(VSM,+,MDS,X)",0.37
+203,Seven Categories,"(LSI,-,MDS,-)",0.39
+204,Seven Categories,"(BERT,X,MDS,X)",0.32
+205,Seven Categories,"(LSI,+,MDS,-)",0.35
+206,Seven Categories,"(NMF,+,MDS,-)",0.38
+207,Seven Categories,"(VSM,-,MDS,X)",0.1
+208,Seven Categories,"(NMF,-,MDS,-)",0.34
+209,Seven Categories,"(LDA,X,MDS,-)",0.37
+210,Seven Categories,"(NMF,-,MDS,+)",0.37
+211,Seven Categories,"(LDA,X,MDS,+)",0.37
+212,Seven Categories,"(NMF,+,MDS,+)",0.33
+213,Seven Categories,"(LSI,-,MDS,+)",0.39
+214,Seven Categories,"(LSI,+,MDS,+)",0.35
+215,Seven Categories,"(VSM,+,SOM,X)",0.63
+216,Seven Categories,"(LSI,-,SOM,-)",0.65
+217,Seven Categories,"(BERT,X,SOM,X)",0.64
+218,Seven Categories,"(LSI,+,SOM,-)",0.64
+219,Seven Categories,"(NMF,+,SOM,-)",0.55
+220,Seven Categories,"(VSM,-,SOM,X)",0.57
+221,Seven Categories,"(NMF,-,SOM,-)",0.58
+222,Seven Categories,"(LDA,X,SOM,-)",0.51
+223,Seven Categories,"(NMF,-,SOM,+)",0.6
+224,Seven Categories,"(LDA,X,SOM,+)",0.51
+225,Seven Categories,"(NMF,+,SOM,+)",0.56
+226,Seven Categories,"(LSI,-,SOM,+)",0.62
+227,Seven Categories,"(LSI,+,SOM,+)",0.64
+228,Seven Categories,"(VSM,+,UMAP,X)",0.72
+229,Seven Categories,"(LSI,-,UMAP,-)",0.66
+230,Seven Categories,"(BERT,X,UMAP,X)",0.68
+231,Seven Categories,"(LSI,+,UMAP,-)",0.65
+232,Seven Categories,"(NMF,+,UMAP,-)",0.62
+233,Seven Categories,"(VSM,-,UMAP,X)",0.63
+234,Seven Categories,"(NMF,-,UMAP,-)",0.66
+235,Seven Categories,"(LDA,X,UMAP,-)",0.52
+236,Seven Categories,"(NMF,-,UMAP,+)",0.68
+237,Seven Categories,"(LDA,X,UMAP,+)",0.52
+238,Seven Categories,"(NMF,+,UMAP,+)",0.63
+239,Seven Categories,"(LSI,-,UMAP,+)",0.66
+240,Seven Categories,"(LSI,+,UMAP,+)",0.66
+241,Seven Categories,"(VSM,+,TSNE,X)",0.8
+242,Seven Categories,"(LSI,-,TSNE,-)",0.66
+243,Seven Categories,"(BERT,X,TSNE,X)",0.65
+244,Seven Categories,"(LSI,+,TSNE,-)",0.63
+245,Seven Categories,"(NMF,+,TSNE,-)",0.65
+246,Seven Categories,"(VSM,-,TSNE,X)",0.71
+247,Seven Categories,"(NMF,-,TSNE,-)",0.7
+248,Seven Categories,"(LDA,X,TSNE,-)",0.54
+249,Seven Categories,"(NMF,-,TSNE,+)",0.71
+250,Seven Categories,"(LDA,X,TSNE,+)",0.54
+251,Seven Categories,"(NMF,+,TSNE,+)",0.65
+252,Seven Categories,"(LSI,-,TSNE,+)",0.64
+253,Seven Categories,"(LSI,+,TSNE,+)",0.61
+254,GitHub,"(NMF,+,SOM,+)",-1.0
+255,GitHub,"(BERT,X,UMAP,X)",-1.0
+256,GitHub,"(BERT,X,MDS,X)",-1.0
+257,GitHub,"(LDA,X,SOM,+)",-1.0
+258,GitHub,"(BERT,X,TSNE,X)",-1.0
+259,GitHub,"(BERT,X,SOM,X)",-1.0

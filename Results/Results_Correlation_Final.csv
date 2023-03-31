@@ -1,0 +1,65 @@
+,Variable 1,Variable 2,Correlation
+0,Trustworthiness,Trustworthiness,1.0
+1,Trustworthiness,Continuity,0.92
+2,Trustworthiness,Shephard Diagram Correlation,0.81
+3,Trustworthiness,7-Neighborhood Hit,0.28
+4,Trustworthiness,Distance Consistency,0.06
+5,Trustworthiness,Calinski-Harabasz-Index Normalized,0.32
+6,Trustworthiness,Davies-Bouldin-Index Normalized,0.38
+7,Trustworthiness,Silhouette Coefficient,-0.16
+8,Continuity,Trustworthiness,0.92
+9,Continuity,Continuity,1.0
+10,Continuity,Shephard Diagram Correlation,0.84
+11,Continuity,7-Neighborhood Hit,0.21
+12,Continuity,Distance Consistency,-0.0
+13,Continuity,Calinski-Harabasz-Index Normalized,0.33
+14,Continuity,Davies-Bouldin-Index Normalized,0.36
+15,Continuity,Silhouette Coefficient,-0.2
+16,Shephard Diagram Correlation,Trustworthiness,0.81
+17,Shephard Diagram Correlation,Continuity,0.84
+18,Shephard Diagram Correlation,Shephard Diagram Correlation,1.0
+19,Shephard Diagram Correlation,7-Neighborhood Hit,0.2
+20,Shephard Diagram Correlation,Distance Consistency,0.09
+21,Shephard Diagram Correlation,Calinski-Harabasz-Index Normalized,0.26
+22,Shephard Diagram Correlation,Davies-Bouldin-Index Normalized,0.36
+23,Shephard Diagram Correlation,Silhouette Coefficient,-0.13
+24,7-Neighborhood Hit,Trustworthiness,0.28
+25,7-Neighborhood Hit,Continuity,0.21
+26,7-Neighborhood Hit,Shephard Diagram Correlation,0.2
+27,7-Neighborhood Hit,7-Neighborhood Hit,1.0
+28,7-Neighborhood Hit,Distance Consistency,0.74
+29,7-Neighborhood Hit,Calinski-Harabasz-Index Normalized,0.16
+30,7-Neighborhood Hit,Davies-Bouldin-Index Normalized,0.13
+31,7-Neighborhood Hit,Silhouette Coefficient,0.49
+32,Distance Consistency,Trustworthiness,0.06
+33,Distance Consistency,Continuity,-0.0
+34,Distance Consistency,Shephard Diagram Correlation,0.09
+35,Distance Consistency,7-Neighborhood Hit,0.74
+36,Distance Consistency,Distance Consistency,1.0
+37,Distance Consistency,Calinski-Harabasz-Index Normalized,-0.21
+38,Distance Consistency,Davies-Bouldin-Index Normalized,-0.02
+39,Distance Consistency,Silhouette Coefficient,0.88
+40,Calinski-Harabasz-Index Normalized,Trustworthiness,0.32
+41,Calinski-Harabasz-Index Normalized,Continuity,0.33
+42,Calinski-Harabasz-Index Normalized,Shephard Diagram Correlation,0.26
+43,Calinski-Harabasz-Index Normalized,7-Neighborhood Hit,0.16
+44,Calinski-Harabasz-Index Normalized,Distance Consistency,-0.21
+45,Calinski-Harabasz-Index Normalized,Calinski-Harabasz-Index Normalized,1.0
+46,Calinski-Harabasz-Index Normalized,Davies-Bouldin-Index Normalized,0.33
+47,Calinski-Harabasz-Index Normalized,Silhouette Coefficient,-0.49
+48,Davies-Bouldin-Index Normalized,Trustworthiness,0.38
+49,Davies-Bouldin-Index Normalized,Continuity,0.36
+50,Davies-Bouldin-Index Normalized,Shephard Diagram Correlation,0.36
+51,Davies-Bouldin-Index Normalized,7-Neighborhood Hit,0.13
+52,Davies-Bouldin-Index Normalized,Distance Consistency,-0.02
+53,Davies-Bouldin-Index Normalized,Calinski-Harabasz-Index Normalized,0.33
+54,Davies-Bouldin-Index Normalized,Davies-Bouldin-Index Normalized,1.0
+55,Davies-Bouldin-Index Normalized,Silhouette Coefficient,-0.22
+56,Silhouette Coefficient,Trustworthiness,-0.16
+57,Silhouette Coefficient,Continuity,-0.2
+58,Silhouette Coefficient,Shephard Diagram Correlation,-0.13
+59,Silhouette Coefficient,7-Neighborhood Hit,0.49
+60,Silhouette Coefficient,Distance Consistency,0.88
+61,Silhouette Coefficient,Calinski-Harabasz-Index Normalized,-0.49
+62,Silhouette Coefficient,Davies-Bouldin-Index Normalized,-0.22
+63,Silhouette Coefficient,Silhouette Coefficient,1.0
