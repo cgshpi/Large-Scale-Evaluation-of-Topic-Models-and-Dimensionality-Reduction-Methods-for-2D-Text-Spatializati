@@ -5,7 +5,7 @@
 #SBATCH --array=1-[MAX_JOBS_LIMIT]%50
 #SBATCH --time=5000
 #SBATCH --constraint="ARCH:X86&CPU_PROD:XEON"
-#SBATCH --job-name=benchmark_small
+#SBATCH --job-name=benchmark_memory_moderate
 #SBATCH --cpus-per-task=4
 
 #SBATCH --mail-user=[E-MAIL-address]
