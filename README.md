@@ -122,3 +122,10 @@ Additionally, mounts and workdir need to be set accordingly.
 > ./batch.sh
 > ./batch_big.sh
 ```
+
+# Topic Models
+
+We uploaded the used topic models in two parts to Zenodo.
+
+* `Part 1:` [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8113828.svg)](https://doi.org/10.5281/zenodo.8113828) contains all topic models for `20-newsgroups`, `emails`, `reuters`, `seven_categories`, and some models for the `github_projects` dataset
+* `Part 2:` [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8114601.svg)](https://doi.org/10.5281/zenodo.8114601) contains the remaining topic models for the `github_projects` dataset
