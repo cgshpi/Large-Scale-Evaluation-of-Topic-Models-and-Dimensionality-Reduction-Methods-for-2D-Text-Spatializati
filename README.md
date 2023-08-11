@@ -71,9 +71,28 @@ We have written our code on a Ubuntu 22.04 system.
 * python3-pip
 * git
 
+Please install this via
+
+```bash
+> sudo apt install openjdk-19-jdk ant python3-minimal python3.10-full python3-pip git
+```
+
+We also require the installation of conda.
+
+Please download: https://repo.anaconda.com/miniconda/Miniconda3-py310_23.5.2-0-Linux-x86_64.sh and then install via running:
+
+```bash
+> bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
+```
+
+in your download location.
+
+
 ## Setup
 
 ```bash
+> conda install -c conda-forge hdbscan==0.8.29
+> pip3 install numpy==1.23.5
 > pip3 install -r requirements.txt
 > python3 -m spacy download en_core_web_sm
 > python3 -m spacy download en_core_web_lg
@@ -91,7 +110,7 @@ We have written our code on a Ubuntu 22.04 system.
 
 Repeated calls to main.py using a wide range of parameters (see parameter generator) like this call:
 ```bash
-> python3 main.py --perplexity_tsne 40 --n_iter_tsne 6000 --dataset_name reuters --res_file_name ./results/reuters/results_perplexity_tsne_40_n_iter_tsne_6000_dataset_name_reuters.csv
+> python3 main.py --perplexity_tsne 30 --n_iter_tsne 1000 --learning_rate auto --n_neighbors_umap 15 --min_dist_umap 0.1 --max_iter_mds 300 --dataset_name 20_newsgroups --topic_model lsi_tfidf --res_file_name ./results/20_newsgroups/results_perplexity_tsne_30_n_iter_tsne_1000_learning_rate_auto_n_neighbors_umap_15_min_dist_umap_0.1_max_iter_mds_300_dataset_name_20_newsgroups_topic_model_lsi_tfidf.csv
 ```
 *For replication, we recommend you to (first) test a command like above. For running the full benchmark you will most probably need a computer cluster and about two weeks. Further calls can be produced by parameter_generator.py. See above.*
 
