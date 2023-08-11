@@ -2,7 +2,7 @@ This is the repository for the publication:
 * Daniel Atzberger*, Tim Cech*, Matthias Trapp, Rico Richter, Jürgen Döllner, Tobias Schreck: "Large-Scale Evaluation of Topic Models and Dimensionality Reduction Methods for 2D Text Spatialization", accepted for publication at IEEE VIS 2023.
 \*Both authors contributed equally to this work
 
-![image](https://github.com/hpicgs/Topic-Models-and-Dimensionality-Reduction-Benchmark/assets/27726055/8d749a5d-da1f-42d5-ba4f-af8aec95a135)
+![image](https://github.com/hpicgs/Topic-Models-and-Dimensionality-Reduction-Benchmark/assets/27726055/96d82c0c-9d8a-485c-b99f-4a3774965969)
 
 # Benchmark Specs
 
