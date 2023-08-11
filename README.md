@@ -182,6 +182,7 @@ After downloading and cloning all files you should end up with the following pro
 [project_home]
   - Analysis_Visualization
   - Results
+  - Mallet
   - models
     - 20_newsgroups
     - emails
