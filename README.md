@@ -77,21 +77,9 @@ Please install this via
 > sudo apt install openjdk-19-jdk ant python3-minimal python3.10-full python3-pip git
 ```
 
-We also require the installation of conda.
-
-Please download: https://repo.anaconda.com/miniconda/Miniconda3-py310_23.5.2-0-Linux-x86_64.sh and then install via running:
-
-```bash
-> bash Miniconda3-py310_23.5.2-0-Linux-x86_64.sh
-```
-
-in your download location.
-
-
 ## Setup
 
 ```bash
-> conda install -c conda-forge hdbscan==0.8.29
 > pip3 install numpy==1.23.5
 > pip3 install -r requirements.txt
 > python3 -m spacy download en_core_web_sm
