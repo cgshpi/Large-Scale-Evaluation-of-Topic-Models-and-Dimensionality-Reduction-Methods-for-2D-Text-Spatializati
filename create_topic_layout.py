@@ -1,6 +1,7 @@
 import math
 import os
 import pickle
+import time
 
 import numpy as np
 import pandas as pd
@@ -404,23 +405,28 @@ def create_all_topic_models(word_lists, model_path, hyperparameters_lda=None, hy
     dictionary.save(os.path.join(model_path, "dictionary" + "_" + str(len(dictionary))))
 
     if topic_model == "bow" or topic_model == "" or not disable_model_training:
+        start = time.time()
         bow_dense, filtered_indices = create_bow_model(dictionary=dictionary, corpus=corpus,
                                                        dataset_base_path=model_path,
                                                        min_density=min_density)
         print("Created BOW model!", flush=True)
+        print("Elapsed time for getting BOW model: " + str(time.time() - start), flush=True)
     else:
         bow_dense, filtered_indices = None, None
 
     if topic_model == "tfidf" or topic_model == "" or not disable_model_training:
+        start = time.time()
         tfidf_dense, tfidf_sparse = create_tfidf_model(dictionary=dictionary, corpus=corpus,
                                                        dataset_base_path=model_path,
                                                        min_density=min_density, filter_indices=filtered_indices,
                                                        disable_model_training=disable_model_training)
         print("Created Tfidf model!", flush=True)
+        print("Elapsed time for getting Tfidf model: " + str(time.time() - start), flush=True)
     else:
         tfidf_dense, tfidf_sparse = None, None
 
     if "lda" in topic_model or topic_model == "" or not disable_model_training:
+        start = time.time()
         lda_dense, lda_linear_combined = create_lda_model(dictionary=dictionary, corpus=corpus,
                                                           dataset_base_path=model_path, id2word=dictionary,
                                                           filter_indices=filtered_indices, min_density=min_density,
@@ -428,10 +434,12 @@ def create_all_topic_models(word_lists, model_path, hyperparameters_lda=None, hy
                                                           topic_model=topic_model,
                                                           **hyperparameters_lda)
         print("Created LDA model!", flush=True)
+        print("Elapsed time for getting LDA model: " + str(time.time() - start), flush=True)
     else:
         lda_dense, lda_linear_combined = None, None
 
     if "lsi" in topic_model or topic_model == "" or not disable_model_training:
+        start = time.time()
         lsi_dense, lsi_linear_combined, lsi_dense_tfidf, lsi_linear_combined_tfidf = create_lsi_model(
             dictionary=dictionary,
             corpus=corpus,
@@ -443,10 +451,12 @@ def create_all_topic_models(word_lists, model_path, hyperparameters_lda=None, hy
             topic_model=topic_model,
             **hyperparameters_lsi)
         print("Created LSI model!", flush=True)
+        print("Elapsed time for getting LSI model: " + str(time.time() - start), flush=True)
     else:
         lsi_dense, lsi_linear_combined, lsi_dense_tfidf, lsi_linear_combined_tfidf = None, None, None, None
 
     if "nmf" in topic_model or topic_model == "" or not disable_model_training:
+        start = time.time()
         nmf_dense, nmf_linear_combined, nmf_tfidf_dense, nmf_tfidf_linear_combined = create_nmf_layout(
             dictionary=dictionary, corpus=corpus,
             dataset_base_path=model_path, filter_indices=filtered_indices,
@@ -454,14 +464,17 @@ def create_all_topic_models(word_lists, model_path, hyperparameters_lda=None, hy
             topic_model=topic_model,
             **hyperparameters_nmf)
         print("Created NMF model!", flush=True)
+        print("Elapsed time for getting NMF model: " + str(time.time() - start), flush=True)
     else:
         nmf_dense, nmf_linear_combined, nmf_tfidf_dense, nmf_tfidf_linear_combined = None, None, None, None
 
     if topic_model == "bert" or topic_model == "":
+        start = time.time()
         bert_dense = create_bert_layout(words_lists=word_lists, dictionary=dictionary, dataset_base_path=model_path,
                                         disable_model_training=disable_model_training,
                                         n_categories=hyperparameters_bert["n_categories"])
         print("Created BERT model!", flush=True)
+        print("Elapsed time for getting BERT model: " + str(time.time() - start), flush=True)
     else:
         bert_dense = None
 

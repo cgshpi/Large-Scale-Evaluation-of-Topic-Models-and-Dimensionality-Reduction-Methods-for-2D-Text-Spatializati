@@ -3,6 +3,7 @@ import csv
 import gc
 import pickle
 import shutil
+import time
 
 import pandas as pd
 import psutil
@@ -183,7 +184,9 @@ def main():
         print("Found completely processed result. I will not reprocess and return.", flush=True)
         return
 
+    start = time.time()
     filter_threshold_bow, needs_lemmatization, perform_standard_preprocessing, x, y = get_raw_dataset(dataset_name)
+    print("Elapsed time for getting dataset: " + str(time.time() - start), flush=True)
 
     if dict_of_hyperparameters["lda"]["n_topics"] is None:
         dict_of_hyperparameters["lda"]["n_topics"] = len(np.unique(y))
@@ -238,9 +241,12 @@ def main():
                                     som_hyperparameters=dict_of_hyperparameters['som'],
                                     mds_hyperparameters=dict_of_hyperparameters['mds'], only_som=only_som,
                                     only_tsne=only_tsne)
+
+        start = time.time()
         res_df = evaluate_layouts(res_path, high_embedding, y, embeddings, dict_of_hyperparameters, old_df=res_df,
                                   res_file_name=res_file_name, topic_level_experiment_name=experiment,
                                   use_bow_for_comparison=True)
+        print("Elapsed time for evaluation: " + str(time.time() - start), flush=True)
 
         # if "bow" not in experiment:
         #    res_df = evaluate_layouts(res_path, high_embedding, y, embeddings, dict_of_hyperparameters, old_df=res_df,
@@ -438,6 +444,12 @@ def get_raw_dataset(dataset_name, filter_threshold_bow=0.001, needs_lemmatizatio
     else:
         NotImplementedError("Didn't recognize dataset '" + dataset_name + "' available options are: [20_newsgroups]")
     print("Got raw dataset!", flush=True)
+
+    if isinstance(x[0], str):
+        median = np.median(np.array([len(text.split()) for text in x]))
+    else:
+        median = np.median(np.array([len(text) for text in x]))
+    print("Median length of text for dataset: " + dataset_name + " is " + str(median))
     return filter_threshold_bow, needs_lemmatization, perform_standard_preprocessing, x, y
 
 

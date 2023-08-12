@@ -1,11 +1,14 @@
 import pickle
+import time
 
 from pynndescent import NNDescent
 from scipy.sparse import csr_matrix
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE, MDS
 from umap import UMAP
-import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("Agg")
+from matplotlib import pyplot as plt
 import numpy as np
 from sparse_som import *
 from sklearn_som.som import SOM
@@ -249,26 +252,38 @@ def create_layouts(x, y, result_path, dataset_name, test_name, umap_hyperparamet
 
     print("Begin processing layouts", flush=True)
     if only_som:
+        start = time.time()
         print("Begin SOM layout!", flush=True)
         res_dict = create_som_layout(x=x, y=y, result_path=result_path, dataset_name=dataset_name,
                                      test_name=test_name, res_dict=res_dict, **som_hyperparameters)
         print("Finished SOM layout!", flush=True)
+        print("Elapsed time for getting SOM layout: " + str(time.time() - start), flush=True)
     elif only_tsne:
+        start = time.time()
         res_dict = create_tsne_layout(x=x, y=y, result_path=result_path, dataset_name=dataset_name,
                                       test_name=test_name, res_dict=res_dict, metric=metric_tsne,
                                       **tsne_hyperparameters)
         print("Finished TSNE layout!", flush=True)
+        print("Elapsed time for getting TSNE layout: " + str(time.time() - start), flush=True)
     else:
+        start = time.time()
         res_dict = create_tsne_layout(x=x, y=y, result_path=result_path, dataset_name=dataset_name,
                                       test_name=test_name, res_dict=res_dict, metric=metric_tsne,
                                       **tsne_hyperparameters)
         print("Finished TSNE layout!", flush=True)
+        print("Elapsed time for getting TSNE layout: " + str(time.time() - start), flush=True)
+
+        start = time.time()
         res_dict = create_umap_layout(x=x, y=y, result_path=result_path, dataset_name=dataset_name,
                                       test_name=test_name, res_dict=res_dict, **umap_hyperparameters)
         print("Finished UMAP layout!", flush=True)
+        print("Elapsed time for getting UMAP layout: " + str(time.time() - start), flush=True)
+
+        start = time.time()
         res_dict = create_mds_layout(x=x, y=y, result_path=result_path, dataset_name=dataset_name,
                                      test_name=test_name, res_dict=res_dict, **mds_hyperparameters)
         print("Finished MDS layout!", flush=True)
+        print("Elapsed time for getting MDS layout: " + str(time.time() - start), flush=True)
     print("Created all layouts!", flush=True)
 
     return res_dict

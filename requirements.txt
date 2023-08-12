@@ -1,6 +1,6 @@
 gensim==4.2.0
 GitPython==3.1.30
-hdbscan==0.8.29
+hdbscan==0.8.33
 humanize==4.4.0
 matplotlib==3.6.3
 nltk==3.7
