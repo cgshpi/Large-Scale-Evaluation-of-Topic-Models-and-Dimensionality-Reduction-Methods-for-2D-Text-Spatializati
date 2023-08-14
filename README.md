@@ -86,6 +86,8 @@ Please install this via
 > python3 -m spacy download en_core_web_lg
 ```
 
+Please note that the results reported and the BERT model linked below were trained with hdbscan 0.8.28. Due to compatability issues from Cython 3 with hdbscan, we followed the advise of the developers of hdbscan and updated our requirement to hdbscan 0.8.33 to avoid having to rely on Conda or suppressing the usage of Cython 3 (compare to https://github.com/scikit-learn-contrib/hdbscan/releases). 
+
 ## Run
 
 ### Parameter Generator
