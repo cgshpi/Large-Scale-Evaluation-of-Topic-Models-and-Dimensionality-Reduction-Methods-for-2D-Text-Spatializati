@@ -135,6 +135,8 @@ For aesthetics we used ggplot2 for postprocessing our scatter plots in the paper
 > python3 get_r_pdf_plots.py --base_path results/20_newsgroups --dataset_name 20_newsgroups
 ```
 
+Afterwards, you can find the new scatter plots in the "Analysis_Visualization" directory.
+
 # Docker Setup
 
 ## Build
