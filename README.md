@@ -2,7 +2,7 @@ This is the repository for the publication:
 * Daniel Atzberger*, Tim Cech*, Matthias Trapp, Rico Richter, Jürgen Döllner, Tobias Schreck: "Large-Scale Evaluation of Topic Models and Dimensionality Reduction Methods for 2D Text Spatialization", accepted for publication at IEEE VIS 2023.
 \*Both authors contributed equally to this work
 
-![image](https://github.com/hpicgs/Topic-Models-and-Dimensionality-Reduction-Benchmark/assets/27726055/61ae26df-8f2b-439a-a973-f18d5fef0e36)
+![image](https://github.com/hpicgs/Topic-Models-and-Dimensionality-Reduction-Benchmark/assets/27726055/0c857118-74af-4028-b73b-f9d450b4cdd0)
 
 # Benchmark Specs
 
@@ -70,11 +70,12 @@ We have written our code on a Ubuntu 22.04 system.
 * python3.10-full
 * python3-pip
 * git
+* RScript from r-base-core
 
 Please install this via
 
 ```bash
-> sudo apt install openjdk-19-jdk ant python3-minimal python3.10-full python3-pip git
+> sudo apt install openjdk-19-jdk ant python3-minimal python3.10-full python3-pip git r-base-core
 ```
 
 ## Setup
@@ -85,6 +86,16 @@ Please install this via
 > python3 -m spacy download en_core_web_sm
 > python3 -m spacy download en_core_web_lg
 ```
+
+Please note that the results reported and the BERT model linked below were trained with hdbscan 0.8.28. Due to compatability issues from Cython 3 with hdbscan, we followed the advise of the developers of hdbscan and updated our requirement to hdbscan 0.8.33 to avoid having to rely on Conda or suppressing the usage of Cython 3 (compare to https://github.com/scikit-learn-contrib/hdbscan/releases).
+
+For postprocessing we also need ggplot2. Please install it via executing:
+
+```bash
+> R
+> > install.packages("ggplot2")
+```
+and answering yes at every prompt.
 
 ## Run
 
@@ -114,6 +125,17 @@ So the standard workflow is:
 ```
 
 The analysis scripts can also be called directly on a results directory by using the `res_dir_path` flag.
+
+### Postprocessing
+
+To execute this step you need ggplot2. Please refer to "Setup" for instructions how to install this package.
+For aesthetics we used ggplot2 for postprocessing our scatter plots in the paper. This is done via the get_r_pdf_plots.py script. If you executed the call under "ML Processing", the according postprocessing call would be:
+
+```bash
+> python3 get_r_pdf_plots.py --base_path results/20_newsgroups --dataset_name 20_newsgroups
+```
+
+Afterwards, you can find the new scatter plots in the "Analysis_Visualization" directory.
 
 # Docker Setup
 
